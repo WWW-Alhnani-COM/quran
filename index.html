@@ -5,10 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>صدقة جارية - محمد إبراهيم عزيز</title>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rakkas&display=swap" rel="stylesheet">
+
 <style>
 body {
     margin: 0;
-    font-family: "Tahoma", sans-serif;
+    /* تحديث الخط هنا */
+    font-family: 'Rakkas', serif;
     background: #000;
     color: #fff;
 }
@@ -42,12 +47,13 @@ img {
 
 /* الاسم */
 .name {
-    font-size: 26px;
+    font-size: 32px; /* تم تكبير الخط قليلاً ليتناسب مع جمالية Rakkas */
     margin-top: 10px;
     font-weight: bold;
 }
 
 .subtitle {
+    font-size: 20px;
     color: #aaa;
     margin-bottom: 20px;
 }
@@ -59,16 +65,18 @@ img {
     margin-top: 20px;
     border-radius: 12px;
     backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .title {
-    font-size: 16px;
-    color: #ccc;
+    font-size: 22px;
+    color: #d4af37; /* لون ذهبي خفيف ليليق بالخط */
     margin-bottom: 10px;
 }
 
 p {
-    line-height: 2;
+    font-size: 18px;
+    line-height: 1.8;
 }
 
 /* السور */
@@ -76,19 +84,21 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #111;
+    background: rgba(255, 255, 255, 0.05);
     margin: 6px 0;
-    padding: 10px;
+    padding: 10px 15px;
     border-radius: 8px;
 }
 
 button {
-    padding: 8px 10px;
+    font-family: 'Rakkas', serif; /* التأكد من أن الأزرار تستخدم نفس الخط */
+    padding: 5px 15px;
     border-radius: 6px;
     border: 1px solid #444;
     background: #111;
     color: #fff;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 button:hover {
@@ -109,7 +119,6 @@ button:hover {
 <div class="name">محمد إبراهيم عزيز</div>
 <div class="subtitle">صدقة جارية 🤍</div>
 
-<!-- دعاء -->
 <div class="card">
 <div class="title">🤲 دعاء</div>
 <p>
@@ -120,17 +129,15 @@ button:hover {
 </p>
 </div>
 
-<!-- أذكار -->
 <div class="card">
 <div class="title">📿 أذكار</div>
 <p>
-سبحان الله – الحمدلله – الله أكبر<br>
-لا إله إلا الله – استغفر الله العظيم<br>
+سبحان الله – الحمد لله – الله أكبر<br>
+لا إله إلا الله – أستغفر الله العظيم<br>
 اللهم صلِ وسلم على نبينا محمد
 </p>
 </div>
 
-<!-- القرآن -->
 <div class="card">
 <div class="title">🎧 القرآن الكريم</div>
 
