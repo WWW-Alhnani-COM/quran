@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>صدقة جارية - محمد إبراهيم عزيز</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: "Tahoma", sans-serif;
+    background: #000;
+    color: #fff;
+}
+
+/* خلفية */
+.bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url('photo.jpg') center/cover no-repeat;
+    filter: blur(8px) brightness(0.3);
+    z-index: -1;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* صورة */
+img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #444;
+    margin-top: 30px;
+}
+
+/* الاسم */
+.name {
+    font-size: 26px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.subtitle {
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+/* الكروت */
+.card {
+    background: rgba(0,0,0,0.6);
+    padding: 18px;
+    margin-top: 20px;
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+}
+
+.title {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 2;
+}
+
+/* السور */
+.surah {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    margin: 6px 0;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+button {
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid #444;
+    background: #111;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #fff;
+    color: #000;
+}
+</style>
+</head>
+
+<body>
+
+<div class="bg"></div>
+
+<div class="container">
+
+<img src="Messenger_creation_BE4E83B3-C8FD-4006-A490-8EB88E08AC92.jpeg">
+
+<div class="name">محمد إبراهيم عزيز</div>
+<div class="subtitle">صدقة جارية 🤍</div>
+
+<!-- دعاء -->
+<div class="card">
+<div class="title">🤲 دعاء</div>
+<p>
+اللهم اغفر له وارحمه<br>
+اللهم اجعل قبره روضة من رياض الجنة<br>
+اللهم أنس وحشته ونوّر قبره<br>
+اللهم اجمعنا به في جناتك
+</p>
+</div>
+
+<!-- أذكار -->
+<div class="card">
+<div class="title">📿 أذكار</div>
+<p>
+سبحان الله – الحمدلله – الله أكبر<br>
+لا إله إلا الله – استغفر الله العظيم<br>
+اللهم صلِ وسلم على نبينا محمد
+</p>
+</div>
+
+<!-- القرآن -->
+<div class="card">
+<div class="title">🎧 القرآن الكريم</div>
+
+<div class="surah">
+<span>سورة الفاتحة</span>
+<button onclick="play('mp3/الفاتحة.mp3')">▶️ تشغيل</button>
+</div>
+
+<div class="surah">
+<span>سورة الإخلاص</span>
+<button onclick="play('mp3/الاخلاص.mp3')">▶️ تشغيل</button>
+</div>
+
+<div class="surah">
+<span>سورة الفلق</span>
+<button onclick="play('mp3/الفلق.mp3')">▶️ تشغيل</button>
+</div>
+
+<div class="surah">
+<span>سورة الناس</span>
+<button onclick="play('mp3/الناس.mp3')">▶️ تشغيل</button>
+</div>
+
+<div class="surah">
+<span>سورة الكوثر</span>
+<button onclick="play('mp3/الكوثر.mp3')">▶️ تشغيل</button>
+</div>
+
+<div class="surah">
+<span>سورة العصر</span>
+<button onclick="play('mp3/العصر.mp3')">▶️ تشغيل</button>
+</div>
+
+<div class="surah">
+<span>سورة الرحمن</span>
+<button onclick="play('mp3/055.mp3')">▶️ تشغيل</button>
+</div>
+
+<br>
+<button onclick="pause()">⏸️ إيقاف</button>
+
+<audio id="player"></audio>
+
+</div>
+
+</div>
+
+<script>
+let player = document.getElementById("player");
+
+function play(src){
+    player.src = src;
+    player.play();
+}
+
+function pause(){
+    player.pause();
+}
+</script>
+
+</body>
+</html>
